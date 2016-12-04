@@ -15,12 +15,13 @@ export class PeopleList {
   }
 
   load() {
-    if (this.data1) {
+   /* if (this.data1) {
       return Promise.resolve(this.data1);
     }
+    */
     // Dont have the data yet
     return new Promise(resolve => {
-      this.http.get('https://randomuser.me/api/?results=10')
+      this.http.get('https://randomuser.me/api/?results=5')
         .map(res => res.json())
         .subscribe(data => {
           this.data1 = data.results;
