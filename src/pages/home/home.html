@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      SMS spammer.
+      SMS spammer
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -18,7 +18,7 @@
    <ion-label floating>Message</ion-label>
    <ion-textarea [(ngModel)]="msg"></ion-textarea>
  </ion-item>
- <button ion-button full (click)="sendSms()">Send</button>
+ <button ion-button full (click)="sendSms()" icon-left><ion-icon name="send"></ion-icon>Send</button>
 </ion-list>
 
 <ion-list>
@@ -30,5 +30,5 @@
       <p>{{person.email}}</p>
     </ion-item>
 </ion-list>
-<button ion-button full (click)="loadPeople()">New targets</button>
+<button ion-button full (click)="loadPeople()" icon-left><ion-icon name="refresh"></ion-icon>New targets</button>
 </ion-content>
