@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Send SMS
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Nr telefonu</ion-label>
+    <ion-input type="tel" [(ngModel)]="telNo"></ion-input>
+  </ion-item>
+
+<ion-item>
+   <ion-label floating>Wiadomość</ion-label>
+   <ion-textarea [(ngModel)]="msg"></ion-textarea>
+ </ion-item>
+ <button ion-button full (click)="sendSms()">Wyślij</button>
+
+</ion-list>
+</ion-content>
