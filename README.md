@@ -16,5 +16,5 @@ Działanie:
    * naciśnięcie klawisza send wyśle sms (prawdziwe wywołanie natywnej funcji na telefonie, przy poprawnym numerze sms dotrze)
 
 Przetestowane na:
-    - W10 + firefox
-    - Sony Z5 Compact (android 6.1)
+- W10 + firefox
+- Sony Z5 Compact (android 6.1)
